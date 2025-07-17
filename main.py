@@ -1,4 +1,5 @@
 # Prototype for a chatbot that attempts to help a customer find a lost package
+
 import helperfunctions
 
 def main():
@@ -45,6 +46,7 @@ def main():
     helperfunctions.populateDBPersonalIdentifiers(psuedoDBPersonalIdentifiers)
     helperfunctions.populateDBAddress(pseudoDBAddressTracker)
     helperfunctions.populateDBOrderNum(pseudoDBOrderNumberTracker)
+
     # Counters for keeping track of failures in the individual processes
     choiceAErrorCounter = 0
     firstTimeFlag = True
@@ -134,7 +136,8 @@ def main():
             print("I knew you'd want to stick around :] sadly I need to go. My mom's calling me. Ciao~")
             operational = False
       else:
-         print("Hmm well I guess we can sit here until we crash ;) or... I could do this")
+         print("Hmm well I guess we can sit here until we crash ;] or... I could do this")
          operational = False
+
 if __name__ == "__main__":
     main()
